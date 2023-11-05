@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LANDING PAGE</title>
+    <style type="text/css">
+      * {
+    font-family: Arial, Helvetica, sans-serif;
+      line-height: 20px;
+      font-size: 15px;
+    }
+    html {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    /* pengaturan header */
+    header {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      padding-left: 50px;
+     justify-content: space-between;
+                    
+    }
+
+    header .intro h3 {
+      font-size: 50px;
+      margin: 0;
+      padding: 0;
+    }
+
+    header .overlay {
+      position: absolute;
+      right: 0;
+      width: 100%;
+      background-image: url("img/pict.png");
+      min-height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+      transition: 0.5s;
+      z-index: -1;
+
+    }
+
+    section h3 {
+      font-size: 30px;
+      text-align: center;
+      border-bottom: 5px solid #5f849c;
+      width: 265px;
+      display: block;
+      padding-bottom: 10px;
+      margin: 20px auto;
+    }
+
+    section p.ringkasan {
+      font-style: italic;
+      font-size: 18px;
+      color: #ababab;
+      text-align: justify;
+    }
+
+    section.abuabu {
+      background-color: #f5f6f6;
+    }
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    footer {
+      background-color: #5f849c;
+      color: #fff;
+    }
+    footer .bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    footer .bottom div {
+      width: 20%;
+    }
+
+    footer .copyright {
+      width: 100%;
+      margin-top: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px solid #ffa12c;
+      text-align: center;
+      }
+      
+     h2{
+      font-size: 18px;
+    }
+
+      .utama {
+      width: 100%;
+    }
+
+     .top {
+       color: #fff;
+       text-transform: uppercase;
+       cursor: pointer;
+    }
+
+    .top p {
+        padding-top: 10px;
+    }
+
+    .middle {
+      position: absolute;
+    }
+                 
+    .middle h2 {
+        padding-top: 120px;
+    color: white;
+    text-shadow: 3px 3px grey;
+    font-size: 5em;  
+    text-transform: uppercase;
+    margin: 35px 0;
+    }
+                 
+    .middle h3 {
+      color: white;
+      text-shadow: 3px 3px gray;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 1em;
+      text-transform: uppercase;
+      margin: 0px 0;
+    }
+                 
+    .middle p {
+      color: #fff;
+      font-size: 1.1em;         
+      font-weight: 400;
+      margin: 20px 0;
+      max-width: 700px;
+
+    }
+                 
+    .middle a {
+      display: inline-block;
+      background: #ffa12c;
+      padding: 10px 30px;
+      font-size: 13pt;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 10px;
+      color:white;
+      letter-spacing: 2px;
+      transition: 0.2s;
+    }
+                 
+    .middle a:hover {
+      letter-spacing: 6px ;
+      color: white; 
+      background-color: #5f849c;           
+    }
+                 
+    .middle.active {
+      right: 300px;
+    }
+
+    .bottom {
+      width: 1000px;
+      margin: auto;
+    }
+
+    .support,
+    .tim,
+    .manfaat{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .support img {
+      width: 50px;
+    }
+    .support div,
+    .tim div {
+      text-align: center;
+      width: 26%;
+    }
+
+    .manfaat .rincian {
+      width: 47%;
+      box-shadow: 0px -10px 30px #ccc;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .manfaat div.rincian div {
+      width: 50%;
+    }
+    .manfaat .rincian .gambar {
+      border-radius: 5px 0px 0px 5px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+    }
+    .manfaat .rincian .text article {
+      padding: 40px;
+    }
+    .manfaat .rincian .text article h4 {
+      margin: 0px;
+    }
+    .manfaat .rincian .text article a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.5s ease;
+    }
+    .manfaat .rincian .text article a:hover {
+      color: #ccc;
+    }
+    
+    .h{
+      font-size: 20px;
+    }
+
+    .logo {
+      width: 90px;
+      height: 80px;
+    }
+
+  </style>
+  </head>
+
+  <body>
+    <div class="utama">
+      <header id="home">
+      <div class="overlay"></div>
+
+      <div class="top"><h2><img class = "logo" src="img/LOGOO.png" align="LEFT"><p>
+              KEMENTERIAN AGRARIA DAN TATA RUANG/<br>
+              BADAN PERTANAHAN NASIONAL<br>
+              KANWIL PAPUA</p>            
+      </div>
+
+      <div class="middle"> 
+             <h2>SIPKEP</h2>
+            <h3>ARSIP KEPEGAWAIAN</h3>
+            <p>
+                MEMUDAHKAN MELAKUKAN PENGARSIPAN DOKUMEN PEGAWAI DIMANA PUN DAN KAPAN PUN.
+            </p>
+             <a href="login.php">ARSIPKAN SEKARANG</a>
+      </div>
+
+      </header>
+
+      <main>
+        <section class="abuabu" id="manfaat">
+
+          <div class="bottom">
+            <h3>MANFAAT SIPKEP</h3>
+
+            <div class="manfaat">
+              <div class="rincian">
+                <div class="gambar" style="background-image: url('asset/blog1.jpg')"></div>
+                <div class="text">
+                  <article>
+                    <h4>Menyimpan Informasi</h4>
+                    <p>SIPKEP dapat menyimpan informasi elektronik yang memudahkana akses dan pengambilan kembali informasi</p>
+                  </article>
+                </div>
+              </div>
+
+               <div class="rincian">
+                <div class="gambar" style="background-image: url('asset/blog1.jpg')"></div>
+                <div class="text">
+                  <article>
+                    <h4>Menyimpan Informasi</h4>
+                    <p>SIPKEP dapat menyimpan informasi elektronik yang memudahkana akses dan pengambilan kembali informasi</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+            
+            <div class="manfaat">
+              <div class="rincian">
+                <div class="gambar" style="background-image: url('asset/blog1.jpg')"></div>
+                <div class="text">
+                  <article>
+                    <h4>Menyimpan Informasi</h4>
+                    <p>SIPKEP dapat menyimpan informasi elektronik yang memudahkana akses dan pengambilan kembali informasi</p>
+                  </article>
+                </div>
+              </div>
+
+               <div class="rincian">
+                <div class="gambar" style="background-image: url('asset/blog1.jpg')"></div>
+                <div class="text">
+                  <article>
+                    <h4>Menyimpan Informasi</h4>
+                    <p>SIPKEP dapat menyimpan informasi elektronik yang memudahkana akses dan pengambilan kembali informasi</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+            </div>
+        </section>
+      </main>
+
+    <footer id="jennie">
+      <div class="copyright">&copy;2023 Ain Ruby Jane </div>
+    </footer>
+
+    </div>
+  </body>
+</html>
